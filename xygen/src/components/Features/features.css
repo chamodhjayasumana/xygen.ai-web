@@ -1,0 +1,77 @@
+ #feature {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+ }
+
+.featureTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.featureDesc {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+}
+
+.featureBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.featureBar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+
+.featureImg{
+    object-fit: cover;
+    height: 5rem;
+    width: 5rem;
+    margin-right: 2rem;
+}
+
+.featureBarText {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.featureBarText p{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width:720px) {
+    .featureBarText>p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .featureBarText>p {
+        font-size: 3vw;
+    }
+    .featureImg {
+        height: 2.25rem;
+        height: 2.25rem;
+    }
+    .featureBarText>h2{
+        font-size: 5vw;
+    }
+}
