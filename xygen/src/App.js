@@ -1,6 +1,6 @@
 import Intro from "./components/Intro/intro";
 import Navbar from "./components/NavBar/navbar";
-
+import Features from "./components/Features/features";
 
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Intro/>
+      <Features/>
     </div>
   );
 }
