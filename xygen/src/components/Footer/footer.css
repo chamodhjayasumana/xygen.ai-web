@@ -1,0 +1,102 @@
+/* Footer Section */
+#footer {
+    background-color: #2c3e50; /* Deep blue background color */
+    padding: 40px 20px; /* Padding around the footer */
+    color: #ecf0f1; /* Light grey text color for visibility */
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between; /* Space between the footer sections */
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    margin-bottom: 20px; /* Space between footer content and bottom */
+  }
+  
+  /* Each Footer Section Styling */
+  .footerSection {
+    flex: 1;
+    margin: 10px 20px; /* Margin around each section */
+    min-width: 200px; /* Minimum width for smaller screens */
+  }
+  
+  /* Section Titles */
+  .footerSection h3 {
+    font-size: 1.5rem; /* Larger title font */
+    margin-bottom: 15px; /* Space below title */
+    color: #bdc3c7; /* Slightly lighter text color for titles */
+  }
+  
+  /* About Section */
+  .footerSection.about p {
+    font-size: 1rem; /* Regular font size for paragraph */
+    line-height: 1.5; /* Line height for readability */
+    color: #ecf0f1; /* Light grey text */
+  }
+  
+  /* Links Section */
+  .footerSection.links ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+  }
+  
+  .footerSection.links li {
+    margin-bottom: 10px; /* Space between links */
+  }
+  
+  .footerSection.links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ecf0f1; /* Light grey text color for links */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .footerSection.links a:hover {
+    color: #3498db; /* Light blue color on hover */
+  }
+  
+  /* Contact Info Section */
+  .footerSection.contactInfo p {
+    margin: 8px 0; /* Space between contact details */
+    color: #ecf0f1; /* Light grey text */
+  }
+  
+  /* Social Media Icons */
+  .footerSocialLinks {
+    margin-top: 10px; /* Space above social icons */
+  }
+  
+  .socialLink {
+    width: 30px; /* Size of social icons */
+    height: 30px;
+    margin: 0 8px; /* Space between each icon */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+  }
+  
+  .socialLink:hover {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+  }
+  
+  /* Footer Bottom Section */
+  .footerBottom {
+    text-align: center; /* Centered text at the bottom */
+    padding: 10px 0; /* Padding around the bottom text */
+    border-top: 1px solid #34495e; /* Thin top border for separation */
+  }
+  
+  .footerBottom p {
+    font-size: 0.9rem; /* Slightly smaller text */
+    color: #95a5a6; /* Light grey color */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footerContent {
+      flex-direction: column; /* Stack sections vertically on smaller screens */
+      align-items: center; /* Center align the sections */
+    }
+  
+    .footerSection {
+      margin: 20px 0; /* Increase margin for better spacing */
+    }
+  }
+  
