@@ -1,74 +1,110 @@
-#intro{
-    height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
-    overflow: hidden;
+/* General Styling for the Intro Section */
+#intro {
     position: relative;
-}
-
-.bg {
-    position: absolute;
-    top: -4rem;
-    /* right: 0; */
-    z-index: -1;
-    object-fit: cover;
-    height: 100vh;
-}
-
-.introContent {
-    height: 100vh;
-    width: 100vw;
-    padding: 2rem;
-    font-size: 3rem;
-    font-weight: 700;
+    height: 100vh; /* Full screen height */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hello{
-    font-size: 1.75rem;
-    font-weight: 100;
-}
-
-.introName {
-    color: yellow;
-}
-
-.introPara{
-    font-size: medium;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
-.btn{
-    background: white;
-    margin: 1rem 0;
-    padding: 0.75rem 1.5rem;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-color: #0d0d0d; /* Dark background to contrast with content */
+    overflow: hidden; /* Hide any overflow from background image */
+  }
+  
+  /* Background Image Styling */
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire section without stretching */
+    z-index: 1; /* Position behind the content */
+    opacity: 0.5; /* Slight opacity to allow text to stand out */
+  }
+  
+  /* Content Styling */
+  .introContent {
+    position: relative;
+    z-index: 2; /* Position above the background image */
+    color: white; /* White text color for readability */
+    text-align: center;
+  }
+  
+  /* Text Styling */
+  .hello {
+    font-size: 2.5rem; /* Larger font size for greeting */
+    font-weight: 300; /* Light font weight */
+    display: block; /* Ensure it takes up its own line */
+  }
+  
+  .introText {
+    font-size: 2rem; /* Subheading font size */
+    font-weight: 400;
+    margin: 20px 0;
+  }
+  
+  .introName {
+    font-weight: 700; /* Bold the company name */
+    color: #00d1b2; /* Accent color for the company name */
+  }
+  
+  .introPara {
+    font-size: 1.1rem; /* Paragraph font size */
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 30px; /* Space between paragraph and button */
+    max-width: 800px; /* Limit paragraph width */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Button Styling */
+  .btn {
+    background-color: #00d1b2; /* Accent color for button */
     border: none;
-    border-radius: 2rem;
-}
-.btnImg {
-    object-fit: cover;
-    margin: 0 0.25rem;
-    height: 1rem;
-}
-
-@media screen and(max-width:840px){
-    .bg{
-        right: -10vw;
+    padding: 15px 30px; /* Spacing inside button */
+    font-size: 1rem; /* Button text size */
+    font-weight: 600; /* Bold button text */
+    color: #fff; /* White button text */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+    transition: background-color 0.3s ease; /* Smooth background change */
+  }
+  
+  .btn:hover {
+    background-color: #00bfa1; /* Slightly darker on hover */
+  }
+  
+  .btnImg {
+    width: 20px; /* Adjust image size */
+    height: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .introText {
+      font-size: 1.5rem; /* Smaller text for mobile */
     }
-    .introContent{
-        font-size: 10vw;
+  
+    .introPara {
+      font-size: 1rem;
+      padding: 0 20px; /* Add padding for small screens */
     }
-    .hello{
-        font-size: 4.5vw;
+  
+    .btn {
+      padding: 10px 20px; /* Adjust button padding */
+      font-size: 0.9rem; /* Smaller button text */
     }
-}
-
-@media screen and(max-width:480px){
-    .bg{
-        right: -20vw;
+  }
+  
+  @media (max-width: 480px) {
+    .hello {
+      font-size: 2rem; /* Even smaller greeting text */
     }
-}
+  
+    .btnImg {
+      width: 16px; /* Smaller button image */
+      height: 16px;
+    }
+  }
+  

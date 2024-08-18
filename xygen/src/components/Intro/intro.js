@@ -20,5 +20,3 @@ const intro = () => {
 }
 
 export default intro
-
-// the digital world in your hands
