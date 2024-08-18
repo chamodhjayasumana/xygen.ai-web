@@ -1,0 +1,137 @@
+
+/* Styling for the Contact Info Page Section */
+#contactInfoPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a; /* Dark grey background for the section */
+    padding: 50px 20px; /* Padding around the section */
+    color: #fff; /* Set text color to white */
+  }
+  
+  #contact {
+    background-color: #333; /* Dark background for the form */
+    padding: 40px;
+    max-width: 600px; /* Restrict the form width */
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .contactInfoPageTitle {
+    font-size: 2rem; /* Large font size for the title */
+    font-weight: 700; /* Bold font weight for emphasis */
+    margin-bottom: 15px; /* Space below the title */
+    color: #fff; /* White text color */
+  }
+  
+  /* Paragraph Styling */
+  p {
+    font-size: 1.2rem; /* Slightly larger text */
+    color: #bbb; /* Light grey color for the paragraph */
+    margin-bottom: 5px; /* Space below the paragraph */
+  }
+  
+  /* Description Text Styling */
+  .contactInfoDesc {
+    font-size: 1rem; /* Standard text size */
+    color: #ccc; /* Softer grey color */
+    margin-bottom: 30px; /* Space between description and form */
+    display: block;
+  }
+  
+  /* Form Input Styling */
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%; /* Full width of the form */
+    padding: 15px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space between form elements */
+    border: 1px solid #555; /* Dark grey border */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 1rem; /* Standard font size */
+    color: #fff; /* White text color */
+    background-color: #444; /* Dark background for input fields */
+    box-sizing: border-box;
+  }
+  
+  .contactForm input::placeholder,
+  .contactForm textarea::placeholder {
+    color: #aaa; /* Lighter grey placeholder text */
+  }
+  
+  .contactForm input:focus,
+  .contactForm textarea:focus {
+    border-color: #007BFF; /* Accent color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Submit Button Styling */
+  .submitBtn {
+    background-color: #007BFF; /* Accent color */
+    border: none;
+    padding: 15px 30px; /* Padding inside the button */
+    font-size: 1rem; /* Standard font size */
+    font-weight: 600; /* Bold text */
+    color: #fff; /* White text */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background change */
+    width: 100%;
+  }
+  
+  .submitBtn:hover {
+    background-color: #0056b3; /* Slightly darker on hover */
+  }
+  
+  /* Social Media Links */
+  .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Space above the social links */
+  }
+  
+  .link {
+    width: 40px; /* Size of social icons */
+    height: 40px;
+    margin: 0 10px; /* Space between each icon */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth icon scaling */
+  }
+  
+  .link:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #contact {
+      padding: 30px 20px; /* Reduce padding for smaller screens */
+    }
+  
+    .contactInfoPageTitle {
+      font-size: 1.75rem; /* Slightly smaller title */
+    }
+  
+    .contactForm input,
+    .contactForm textarea {
+      padding: 12px; /* Reduce padding inside form elements */
+    }
+  
+    .submitBtn {
+      padding: 12px 20px; /* Adjust button padding */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contactInfoPageTitle {
+      font-size: 1.5rem; /* Smaller title for very small screens */
+    }
+  
+    .link {
+      width: 30px; /* Reduce icon size */
+      height: 30px;
+    }
+  }
+  

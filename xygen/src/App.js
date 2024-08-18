@@ -3,6 +3,7 @@ import Navbar from "./components/NavBar/navbar";
 import Features from "./components/Features/features";
 import Works from "./components/Works/works";
 import Contact from "./components/Contact/contact";
+import ContactInfo from "./components/ContactInfo/contactInfo";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Features/>
       <Works/>
       <Contact/>
+      <ContactInfo/>
     </div>
   );
 }
