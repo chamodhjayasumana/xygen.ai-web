@@ -15,7 +15,7 @@ const ContactInfo = () => {
         <span className="contactInfoDesc">Drop us a line! We are here to answer your questions 24/7.</span>
         <form className="contactForm">
             <input type="text" className="name" placeholder='Your Name'/>
-            <input type="text" className="name" placeholder='Your Name'/>
+            <input type="email" className="name" placeholder='Your Email'/>
             <textarea className="msg" name="message" rows="5" placeholder='Your Message'></textarea>
             <button type='submit' value='send' className="submitBtn">Submit</button>
             <div className="links">

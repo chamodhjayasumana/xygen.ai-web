@@ -1,4 +1,4 @@
-#works {
+/* #works {
     margin: 0 auto;
     min-height: calc(100vh - 4rem);
     width: 100vw;
@@ -25,10 +25,10 @@
 .worksGrid {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-    grid-template-rows: repeat(2, 1fr);    /* 2 equal-height rows */
-    gap: 10px; /* Space between the boxes */
-    width: 100%; /* Or any desired width */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);    
+    gap: 10px; 
+    width: 100%; 
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
@@ -42,9 +42,9 @@
 }
 
 .worksImgs {
-    padding: 20px; /* Padding inside each box */
-    text-align: center; /* Center the text inside the boxes */
-    border: 1px solid #ccc; /* Optional border */
+    padding: 20px; 
+    text-align: center; 
+    border: 1px solid #ccc; 
     align-items: center;
     justify-content: center;
     display: flex;
@@ -71,4 +71,164 @@
     .worksGrid{
         height: 48vw;
     }
+} */
+
+/* Success Stories Section */
+/* Base Styles */
+#works {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text color */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.workstitle {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.worksDesc {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #cccccc; /* Slightly lighter text for the description */
+}
+
+.worksGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+    gap: 30px; /* Gap between items */
+    padding: 20px;
+}
+
+.worksImgs {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out;
+    background-color: #f1e7e7; /* Darker background for images */
+}
+
+.worksImgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.85; /* Slightly dim the images */
+}
+
+.worksBarText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(24, 23, 23, 0.8); /* Dark overlay */
+    color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: bottom 0.3s ease-in-out;
+    border-radius: 0 0 15px 15px; /* Match rounded corners */
+}
+
+.worksImgs:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.worksImgs:hover .worksBarText {
+    bottom: 10px; /* Slight lift on hover */
+}
+
+.workBtn {
+    background-color: #1595c4; /* Bright button color for contrast */
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.workBtn:hover {
+    background-color: #03041b; /* Darker shade on hover */
+}
+
+/* Media Queries */
+
+/* For tablets and larger phones (portrait orientation) */
+@media screen and (max-width: 768px) {
+  .worksGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Smaller columns */
+    gap: 15px; /* Reduce gap between items */
+  }
+
+  .workstitle {
+    font-size: 2rem; /* Slightly smaller title font size */
+  }
+
+  .worksDesc {
+    font-size: 1rem; /* Slightly smaller description font size */
+  }
+
+  .worksBarText h2 {
+    font-size: 1.2rem; /* Smaller font size for titles */
+  }
+
+  .workBtn {
+    font-size: 1rem; /* Smaller font size for button */
+    padding: 10px 25px; /* Adjust padding */
+  }
+}
+
+/* For small phones and very small screens */
+@media screen and (max-width: 480px) {
+  .worksGrid {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .workstitle {
+    font-size: 1.8rem; /* Smaller title font size */
+  }
+
+  .worksDesc {
+    font-size: 0.9rem; /* Smaller description font size */
+  }
+
+  .worksBarText h2 {
+    font-size: 1rem; /* Smaller font size for titles */
+  }
+
+  .workBtn {
+    font-size: 0.9rem; /* Smaller font size for button */
+    padding: 8px 20px; /* Adjust padding */
+  }
+
+  .worksBarText {
+    padding: 15px; /* Reduce padding in overlay text */
+  }
+}
+
+/* For large screens (desktops) */
+@media screen and (min-width: 1200px) {
+  .worksGrid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+  }
+
+  .workstitle {
+    font-size: 3rem; /* Larger title font size */
+  }
+
+  .worksDesc {
+    font-size: 1.5rem; /* Larger description font size */
+  }
+
+  .worksBarText h2 {
+    font-size: 1.6rem; /* Larger font size for titles */
+  }
+
+  .workBtn {
+    font-size: 1.3rem; /* Larger font size for button */
+    padding: 15px 35px; /* Larger padding */
+  }
 }
