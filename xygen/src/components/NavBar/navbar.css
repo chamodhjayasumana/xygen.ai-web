@@ -1,4 +1,4 @@
-.Navbar {
+/* .Navbar {
     background: rgb(30 ,30, 30);
     height: 5rem;
     width: 100vw;
@@ -48,4 +48,92 @@
     height: 1rem;
     width: 1rem;
     margin: 1rem;
+} */
+
+/* Base Styles for Navbar */
+.Navbar {
+    background-color: #1e1e1e; /* Dark background */
+    color: #ffffff; /* White text color */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+.logo {
+    width: 70px; /* Adjust based on your logo size */
+    height: auto;
+}
+
+.desktopMenu {
+    display: flex;
+    gap: 20px;
+}
+
+.descktopMenuListItem {
+    color: #ffffff; /* White text color for menu items */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.descktopMenuListItem:hover {
+    color: #1f60a7; /* Highlight color on hover */
+    background-color: #333333; /* Darker background on hover */
+}
+
+.descktopMenuBtn {
+    background-color: #164187; /* Highlight color for the button */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.descktopMenuImg {
+    width: 20px; /* Adjust based on your icon size */
+    height: auto;
+    margin-right: 8px;
+}
+
+.descktopMenuBtn:hover {
+    background-color: #050a23; /* Darker shade on hover */
+}
+
+/* Media Queries */
+
+/* For tablets and larger phones (portrait orientation) */
+@media screen and (max-width: 768px) {
+    .desktopMenu {
+        display: none; /* Hide desktop menu */
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+}
+
+/* Mobile menu styles */
+.navbar-toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff; /* White bars for the toggle */
+    margin: 3px 0;
 }
