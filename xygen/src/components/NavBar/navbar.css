@@ -67,11 +67,13 @@
 .logo {
     width: 70px; /* Adjust based on your logo size */
     height: auto;
+    cursor: pointer;
 }
 
 .desktopMenu {
     display: flex;
     gap: 20px;
+
 }
 
 .descktopMenuListItem {
@@ -81,6 +83,7 @@
     transition: color 0.3s ease;
     padding: 5px 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .descktopMenuListItem:hover {
